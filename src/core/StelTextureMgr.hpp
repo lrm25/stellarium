@@ -43,6 +43,12 @@ public:
 	//! @param params the texture creation parameters.
 	StelTextureSP createTexture(const QString& filename, const StelTexture::StelTextureParams& params=StelTexture::StelTextureParams());
 
+	//! Load an SVG image from a file and create a new texture from it
+	//! @param filename the SVG file name, can be absolute path if starts with '/' otherwise
+	//!    the file will be looked for in Stellarium's standard textures directories.
+	//! @param params the texture creation parameters.
+	StelTextureSP createTextureSvg(const QString& filename, const int size, const StelTexture::StelTextureParams& params=StelTexture::StelTextureParams());
+
 	//! Create a texture from a QImage.
 	StelTextureSP createTexture(const QImage &image, const StelTexture::StelTextureParams& params=StelTexture::StelTextureParams());
 

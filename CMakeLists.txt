@@ -385,11 +385,11 @@ FIND_PACKAGE(Qt5Widgets REQUIRED)
 # required for qcustomplot external dependency
 # not used elsewhere
 FIND_PACKAGE(Qt5PrintSupport REQUIRED)
+FIND_PACKAGE(Qt5Svg REQUIRED)
 IF(USE_PLUGIN_TELESCOPECONTROL OR ENABLE_GPS)
      FIND_PACKAGE(Qt5SerialPort REQUIRED)
 ENDIF()
 IF(WIN32)
-     FIND_PACKAGE(Qt5Svg REQUIRED)
      FIND_PACKAGE(Qt5XmlPatterns REQUIRED)
 
      # Try found OpenSSL DLL's on Windows
